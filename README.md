@@ -28,3 +28,78 @@ This repository provides the implementation, data, and scripts for reproducing o
 
 ## 📁 Folder Structure
 
+```
+SSCBDTA/
+├── dataset/                 # Benchmark datasets: Davis, KIBA
+├── model/                   # Model definitions
+├── utils/                   # Preprocessing, evaluation functions
+├── train.py                 # Training script
+├── test.py                  # Testing script
+├── README.md                # This file
+└── requirements.txt         # Required packages
+```
+
+---
+
+## 🚀 Quick Start
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/4399chengzi/SSCBDTA.git
+cd SSCBDTA
+```
+
+### 2. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run training
+
+```bash
+python train.py
+```
+
+---
+
+## 📊 Results
+
+| Dataset | CI (↑) | MSE (↓) | r<sub>m</sub><sup>2</sup> (↑) |
+|---------|--------|---------|------------------------------|
+| Davis   | 0.903  | 0.213   | 0.694                        |
+| KIBA    | 0.896  | 0.143   | 0.775                        |
+
+For ablation and case study results, please refer to the full manuscript.
+
+---
+
+## 📌 Citation
+
+If you find this work helpful, please cite:
+
+```bibtex
+@article{SSCBDTA2024,
+  title={SSCBDTA: Prediction of Drug-Target Binding Affinity with Secondary Sequences and Multiple Cross-Attention Blocks},
+  author={Zuo, Hai-Wei and Zhou, Peng-Cheng and Li, Xia and Zhang, Li},
+  journal={Interdisciplinary Sciences: Computational Life Sciences},
+  year={2024}
+}
+```
+
+---
+
+## 📬 Contact
+
+For questions or collaboration, feel free to reach out:
+
+- Hai-Wei Zuo: zuohw@xzhmu.edu.cn  
+- Peng-Cheng Zhou: 981691590@qq.com  
+- Li Zhang (corresponding author): l-z@mail.tsinghua.edu.cn
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
